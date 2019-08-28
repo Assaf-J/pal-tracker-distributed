@@ -7,6 +7,6 @@ applications:
   instances: 1
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-jennifer-assaf.apps.chicken.pal.pivotal.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-jennifer-assaf.apps.evans.pal.pivotal.io
   services:
   - tracker-registration-database
