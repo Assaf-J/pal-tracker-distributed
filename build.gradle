@@ -27,7 +27,6 @@ buildscript {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
         classpath "mysql:mysql-connector-java:$mysqlVersion"
         classpath("io.spring.gradle:dependency-management-plugin:1.0.7.RELEASE")
-        compile("org.springframework.boot:spring-boot-starter-actuator:$springBootVersion")
     }
 }
 
@@ -50,10 +49,10 @@ subprojects {
         compile "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
         compile "org.slf4j:slf4j-api:$slf4jVersion"
         compile group: 'org.springframework.cloud', name: 'spring-cloud-commons', version: '2.0.4.RELEASE'
+        compile("org.springframework.boot:spring-boot-starter-actuator:$springBootVersion")
         testCompile "junit:junit:$junitVersion"
         testCompile "org.mockito:mockito-core:$mockitoVersion"
         testCompile "org.assertj:assertj-core:$assertJVersion"
-        compile("org.springframework.boot:spring-boot-starter-actuator:$springBootVersion")
     }
 
     test {

@@ -1,0 +1,5 @@
+./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery \
+                                                                                            -PregistrationServerUrl=http://registration-pal-jennifer-assaf.apps.evans.pal.pivotal.io \
+                                                                                            -PbacklogServerUrl=http://backlog-pal-jennifer-assaf.apps.evans.pal.pivotal.io \
+                                                                                            -PallocationsServerUrl=http://allocations-pal-jennifer-assaf.apps.evans.pal.pivotal.io \
+                                                                                            -PtimesheetsServerUrl=http://timesheets-pal-jennifer-assaf.apps.evans.pal.pivotal.io
