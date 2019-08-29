@@ -5,3 +5,10 @@ dependencies {
     compile project(":components:projects")
     compile project(":components:users")
 }
+
+bootRun.environment([
+        "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: *"
+])
+test.environment([
+        "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: *"
+])

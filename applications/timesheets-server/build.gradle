@@ -3,3 +3,10 @@ apply from: "$projectDir/../server.gradle"
 dependencies {
     compile project(":components:timesheets")
     compile "io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker"}
+
+bootRun.environment([
+        "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: *"
+])
+test.environment([
+        "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: *"
+])
